@@ -1,7 +1,7 @@
 #!/bin/bash
 set -vxe
 cat /etc/apk/repositories
-sed -i 's/sjc.edge.kernel.org/mirrors.aliyun.com/g' /etc/apk/repositories
+sed -i 's/sjc.edge.kernel.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories
 cat /etc/apk/repositories
 apk add -v -f curl libc6-compat tzdata
 download_go
